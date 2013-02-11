@@ -1,0 +1,13 @@
+{
+	"name": "dom.classlist",
+	"description": "Cross-browser implementation and extension of element.classList",
+	"version": "0.0.1",
+	"author": "popeindustries <alex@pope-industries.com>",
+	"dependencies": {
+	},
+	"main": "index.js",
+	"repository": {
+		"type": "git",
+		"url": "git://github.com/popeindustries/dom.classlist.git"
+	}
+}
