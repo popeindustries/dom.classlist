@@ -4,11 +4,28 @@
 	"version": "0.0.1",
 	"author": "popeindustries <alex@pope-industries.com>",
 	"dependencies": {
-		"util.polyfill": "git://github.com/popeindustries/util.polyfill.git#0.0.1"
+		"util.polyfill": "git://github.com/popeindustries/util.polyfill.git"
+	},
+	"devDependencies": {
+		"mocha": "*",
+		"chai": "*"
 	},
 	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/popeindustries/dom.classlist.git"
+	},
+	"testling": {
+		"harness": "mocha-bdd",
+		"files": "test/*.js",
+		"browsers": {
+			"ie": [7,8,9,10],
+			"firefox": [13],
+			"chrome": [20],
+			"safari": [5.1]
+		}
+	},
+	"scripts": {
+		"test": "mocha --reporter spec"
 	}
 }
