@@ -1,5 +1,5 @@
 var classlist = require('../dom.classlist')
-  , expect = chai.expect
+  , expect = require('chai').expect
   , element;
 
 describe('dom.classlist', function() {
