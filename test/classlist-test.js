@@ -1,7 +1,7 @@
 var classlist, expect, element;
 
 // Make it work in node..
-if (this.module) {
+if (module) {
   classlist = require('../index.js');
   expect = require('chai').expect;
 // .. or browser
