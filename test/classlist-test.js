@@ -1,6 +1,12 @@
-var classlist = require('../dom.classlist')
-  , expect = require('chai').expect
-  , element;
+var classlist = require('dom.classlist')
+  , expect, element;
+
+// Make it work in browser and node
+try {
+  expect = require('chai').expect;
+} catch (err) {
+  expect = chai.expect;
+}
 
 describe('dom.classlist', function() {
   before(function() {
