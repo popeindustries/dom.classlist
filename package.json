@@ -35,7 +35,7 @@
 				"sources": ["node_modules", "."],
 				"targets": [{
 					"input": "index.js",
-					"output": "dom.classlist.js"
+					"output": "test/dom.classlist.js"
 				}]
 			}
 		}

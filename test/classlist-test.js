@@ -1,14 +1,12 @@
 var classlist, expect, element;
 
-// Make it work in browser and node
-classlist = require('../dom.classlist');
-// try {
-// } catch (err) {
-//   classlist = require('dom.classlist');
-// }
-try {
+// Make it work in node..
+if (this.module) {
+  classlist = require('../index.js');
   expect = require('chai').expect;
-} catch (err) {
+// .. or browser
+} else {
+  classlist = require('./dom.classlist');
   expect = chai.expect;
 }
 
