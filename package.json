@@ -8,7 +8,9 @@
 	},
 	"devDependencies": {
 		"mocha": "*",
-		"chai": "*"
+		"chai": "*",
+		"buddy": "*",
+		"browser-require": "git://github.com/popeindustries/browser-require.git"
 	},
 	"main": "index.js",
 	"repository": {
@@ -17,7 +19,7 @@
 	},
 	"testling": {
 		"harness": "mocha-bdd",
-		"files": "test/*.js",
+		"files": "test/*-test.js",
 		"browsers": {
 			"ie": [7,8,9,10],
 			"firefox": [13],
@@ -25,7 +27,18 @@
 			"safari": [5.1]
 		}
 	},
+	"buddy": {
+		"build": {
+			"js": {
+				"sources": ["node_modules", "."],
+				"targets": [{
+					"input": "dom.classlist.js",
+					"output": "test/dom.classlist.js"
+				}]
+			}
+		}
+	},
 	"scripts": {
-		"test": "mocha --reporter spec"
+		"test": "buddy build && open test/test-runner.html"
 	}
 }
