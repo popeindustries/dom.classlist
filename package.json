@@ -8,7 +8,7 @@
 	},
 	"devDependencies": {
 		"mocha": "*",
-		"chai": "*",
+		"expect.js": "*",
 		"buddy": "*",
 		"browser-require": "git://github.com/popeindustries/browser-require.git"
 	},

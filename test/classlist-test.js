@@ -1,13 +1,13 @@
 var classlist, expect, element;
 
 // Make it work in node..
-if (module) {
+try {
   classlist = require('../index.js');
-  expect = require('chai').expect;
+  expect = require('expect.js');
 // .. or browser
-} else {
+} catch (err) {
   classlist = require('./dom.classlist');
-  expect = chai.expect;
+  expect = window.expect;
 }
 
 describe('dom.classlist', function() {
@@ -17,7 +17,7 @@ describe('dom.classlist', function() {
   });
   describe('hasClass()', function() {
     it('should return true if the element has the class', function() {
-      expect(classlist.hasClass(element, 'test-class')).to.be.true;
+      expect(classlist.hasClass(element, 'test-class')).to.be(true);
     });
   });
   describe('addClass()', function() {
