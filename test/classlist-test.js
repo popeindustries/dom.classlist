@@ -1,4 +1,4 @@
-var classlist = require('./dom.classlist')
+var classlist = require('../dom.classlist')
   , expect = chai.expect
   , element;
 
