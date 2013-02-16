@@ -22,9 +22,11 @@
 		"files": "test/classlist-test.js",
 		"browsers": {
 			"ie": [7,8,9,10],
-			"firefox": [13],
-			"chrome": [20],
-			"safari": [5.1]
+			"firefox": [13,17],
+			"chrome": [20,23],
+			"safari": [5.1],
+			"iphone": [6.0],
+			"ipad": [6.0]
 		}
 	},
 	"buddy": {
