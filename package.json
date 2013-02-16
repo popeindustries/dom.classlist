@@ -12,7 +12,7 @@
 		"buddy": "*",
 		"browser-require": "git://github.com/popeindustries/browser-require.git"
 	},
-	"main": "dom.classlist.js",
+	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/popeindustries/dom.classlist.git"
@@ -34,8 +34,8 @@
 			"js": {
 				"sources": ["node_modules", "."],
 				"targets": [{
-					"input": "dom.classlist.js",
-					"output": "test/dom.classlist.js"
+					"input": "index.js",
+					"output": "dom.classlist.js"
 				}]
 			}
 		}
