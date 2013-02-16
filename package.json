@@ -12,7 +12,7 @@
 		"buddy": "*",
 		"browser-require": "git://github.com/popeindustries/browser-require.git"
 	},
-	"main": "index.js",
+	"main": "dom.classlist.js",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/popeindustries/dom.classlist.git"
