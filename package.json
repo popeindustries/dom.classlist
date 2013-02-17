@@ -32,7 +32,7 @@
 	"buddy": {
 		"build": {
 			"js": {
-				"sources": ["node_modules", "."],
+				"sources": ["node_modules/util.polyfill"],
 				"targets": [{
 					"input": "index.js",
 					"output": "test/dom.classlist.js"
