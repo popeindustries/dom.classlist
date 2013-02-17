@@ -41,6 +41,6 @@
 		}
 	},
 	"scripts": {
-		"test": "buddy build && open test/test-runner.html"
+		"test": "./node_modules/.bin/buddy build && open test/test-runner.html"
 	}
 }
