@@ -19,6 +19,17 @@ describe('dom.classlist', function() {
     it('should return true if the element has the class', function() {
       expect(classlist.hasClass(element, 'test-class')).to.be(true);
     });
+    it('should return false if the element does not have the class', function() {
+      expect(classlist.hasClass(element, 'no-class')).to.be(false);
+    });
+  });
+  describe('matchClass()', function() {
+    it('should return the class if the element has a class matching the pattern', function() {
+      expect(classlist.matchClass(element, 'test-')).to.equal('test-class');
+    });
+    it('should return an empty string if the element does not have a class matching the pattern', function() {
+      expect(classlist.matchClass(element, 'no-')).to.equal('');
+    });
   });
   describe('addClass()', function() {
     it('should add the class to the element', function() {
@@ -46,6 +57,15 @@ describe('dom.classlist', function() {
     it('should replace the class with another', function() {
       classlist.replaceClass(element, 'test-class', 'replace-class');
       expect(element.className).to.equal('replace-class');
+    });
+  });
+  describe('addTemporaryClass()', function() {
+    it('should add the class to the element and remove it after a specified duration', function(done) {
+      classlist.addTemporaryClass(element, 'timed-class', 500);
+      setTimeout(function() {
+        expect(element.className).to.equal('replace-class');
+        done();
+      }, 600);
     });
   });
 });
