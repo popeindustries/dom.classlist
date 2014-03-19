@@ -1,5 +1,3 @@
-[![browser support](http://ci.testling.com/popeindustries/dom.classlist.png)](http://ci.testling.com/popeindustries/dom.classlist)
-
 Cross-browser implementation and extension of element.classList
 
 ## Usage
