@@ -1,46 +1,14 @@
 {
 	"name": "dom.classlist",
 	"description": "Cross-browser implementation and extension of element.classList",
-	"version": "0.0.1",
-	"author": "popeindustries <alex@pope-industries.com>",
+	"version": "0.0.2",
+	"author": "Thomas Lein <thomaslein@gmail.com>",
 	"dependencies": {
 		"util.polyfill": "git://github.com/thomaslein/util.polyfill.git"
-	},
-	"devDependencies": {
-		"mocha": "*",
-		"expect.js": "*",
-		"buddy": "*",
-		"browser-require": "git://github.com/popeindustries/browser-require.git"
-	},
+	}
 	"main": "index.js",
 	"repository": {
 		"type": "git",
 		"url": "git://github.com/thomaslein/dom.classlist.git"
-	},
-	"testling": {
-		"harness": "mocha-bdd",
-		"files": "test/classlist-test.js",
-		"browsers": {
-			"ie": [7,8,9,10],
-			"firefox": [13,17],
-			"chrome": [20,23],
-			"safari": [5.1],
-			"iphone": [6.0],
-			"ipad": [6.0]
-		}
-	},
-	"buddy": {
-		"build": {
-			"js": {
-				"sources": ["node_modules/util.polyfill"],
-				"targets": [{
-					"input": "index.js",
-					"output": "test/dom.classlist.js"
-				}]
-			}
-		}
-	},
-	"scripts": {
-		"test": "./node_modules/.bin/buddy build && open test/test-runner.html"
 	}
 }
