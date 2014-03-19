@@ -5,7 +5,7 @@
 	"author": "Thomas Lein <thomaslein@gmail.com>",
 	"dependencies": {
 		"util.polyfill": "git://github.com/thomaslein/util.polyfill.git"
-	}
+	},
 	"main": "index.js",
 	"repository": {
 		"type": "git",
